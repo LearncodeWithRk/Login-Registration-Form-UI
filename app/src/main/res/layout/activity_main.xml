@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/register_activity"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/person"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="LearnCode With RK"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="Registration"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:hint="@string/form_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    style="@style/AppTheme"
+
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/AppTheme"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    style="@style/AppTheme"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:textColorHint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:hint="@string/form_password">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    style="@style/AppTheme"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:ems="10" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                style="@style/AppTheme"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:id="@+id/buttonSubmit"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_round"
+                android:text="Sign Up" />
+
+            <TextView
+                style="@style/AppTheme"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:id="@+id/already_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:text="@string/already_member"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
